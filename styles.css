@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: #4f92ff;
+  color: white;
+  text-align: center;
+  padding: 60px 20px 40px;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #dbe9ff;
+}
+
+main {
+  flex: 1;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.card {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card.small {
+  width: 300px;
+}
+
+.card.large {
+  flex: 1;
+  min-width: 500px;
+  max-width: 800px;
+  text-align: left;
+}
+
+.card h2 {
+  color: #4f92ff;
+  margin-bottom: 20px;
+}
+
+.button, button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #4f92ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover, button:hover {
+  background-color: #3578e5;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 15px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input[type="text"].valid,
+input[type="password"].valid {
+  border-color: #28a745; /* Grün für gültige Eingabe */
+}
+
+input[type="text"].invalid,
+input[type="password"].invalid {
+  border-color: #dc3545; /* Rot für ungültige Eingabe */
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.error-message ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.error-message li {
+  margin-bottom: 5px;
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+@media (max-width: 1000px) {
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card.small, .card.large {
+    width: 100%;
+    max-width: 500px;
+  }
+  .card.large {
+    text-align: center;
+  }
+}

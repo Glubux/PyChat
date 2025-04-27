@@ -1,36 +1,74 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datei herunterladen</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-            padding: 50px;
-        }
-        h1 {
-            color: #333;
-        }
-        a {
-            display: inline-block;
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-        a:hover {
-            background-color: #0056b3;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PyChat</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>Datei herunterladen</h1>
-    <p>Klicke auf den folgenden Button, um die Datei herunterzuladen:</p>
-    <a href="client.py" download>Download Datei</a>
+
+  <header>
+    <h1>PyChat - Chat Platform</h1>
+    <p>Pychat ist eine Chatplattform geschrieben in Python.</p>
+    <p>Lade den Client herunter und erstelle ein Account.</p>
+  </header>
+
+  <main>
+
+    <div class="flex-container">
+
+      <!-- Linke Karte -->
+      <div class="card small">
+        <h2>Download</h2>
+        <p>Hole dir die neueste Version:</p>
+        <br>
+        <h3>Raw Python File:</h3>
+        <a href="client.py" download="client.py" class="button">Datei herunterladen</a>
+      </div>
+
+      <!-- Mittlere große Karte -->
+      <div class="card large">
+        <h2>Projekt</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus dignissimos, quas sint dolor odio porro recusandae voluptas explicabo inventore quaerat, fugiat laborum labore, blanditiis veritatis! Id laborum recusandae deserunt corrupti?
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim corrupti amet vel voluptatibus doloribus veniam beatae possimus rerum esse perspiciatis ullam culpa, quas sequi voluptatum saepe soluta, excepturi quae quis?
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur quasi in a dolore quibusdam debitis dolor, adipisci quod quisquam vero reiciendis magni ex similique dolorem ad tenetur explicabo laudantium necessitatibus!
+        </p>
+      </div>
+
+      <!-- Rechte Karte 
+      <div class="card small">
+        <h2>Account erstellen</h2>
+        <form id="register-form" action="#" method="post">
+            <div>
+              <label for="username">Benutzername</label>
+              <input type="text" id="username" name="username" required>
+              <div id="username-error" class="error-message"></div>
+            </div>
+            <div>
+              <label for="password">Passwort</label>
+              <input type="password" id="password" name="password" required>
+              <div id="password-error" class="error-message"></div>
+            </div>
+            <div>
+              <label for="confirm-password">Passwort wiederholen</label>
+              <input type="password" id="confirm-password" name="confirm-password" required>
+              <div id="confirm-password-error" class="error-message"></div>
+            </div>
+            <button type="submit">Registrieren</button>
+          </form>          
+      </div>
+-->
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2025 Deine Webseite
+  </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
